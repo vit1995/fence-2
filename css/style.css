@@ -840,12 +840,10 @@ body::after {
   width: 100%;
   max-width: 500px;
   border-radius: 20px;
-  overflow: hidden;
 }
 
 .popup__content--download {
   max-width: 900px;
-  position: relative;
 }
 
 .popup__content--download .checkbox span {
@@ -879,7 +877,7 @@ body::after {
   position: absolute;
   top: 0%;
   right: -35%;
-  z-index: 1;
+  z-index: -1;
 }
 
 .popup__close {
@@ -906,6 +904,10 @@ body::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.popup__body--download {
+  overflow: hidden;
 }
 
 .popup__top {
@@ -1078,6 +1080,11 @@ body::after {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+}
+
+.popup__content-container {
+  overflow: hidden;
+  position: relative;
 }
 
 .spollers {
@@ -6309,11 +6316,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .popup__content--download {
-    padding: 5rem;
+    padding: 0.0000000625rem;
   }
 
   .popup__body {
     gap: 1.5625rem;
+  }
+
+  .popup__body--download {
+    padding: 5rem;
   }
 
   .popup__top {
@@ -6959,11 +6970,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .popup__content--download {
-    padding: 1.25rem;
+    padding: 0.0000000625rem;
   }
 
   .popup__body {
     gap: 0.625rem;
+  }
+
+  .popup__body--download {
+    padding: 1.25rem;
   }
 
   .popup__top {
@@ -7087,7 +7102,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .slide-calculator__title span {
-    font-size: 0.75rem;
+    font-size: 0.625rem;
   }
 
   .slide-calculator__subtitle {
@@ -8021,15 +8036,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
-@supports (padding: clamp( 1.25rem , -0.1136363636rem  +  6.8181818182vw , 5rem )) {
+@supports (padding: clamp( 0.0000000625rem , 0.0000000625rem  +  0vw , 0.0000000625rem )) {
     .popup__content--download {
-      padding: clamp( 1.25rem , -0.1136363636rem  +  6.8181818182vw , 5rem );
+      padding: clamp( 0.0000000625rem , 0.0000000625rem  +  0vw , 0.0000000625rem );
     }
 }
 
-@supports not (padding: clamp( 1.25rem , -0.1136363636rem  +  6.8181818182vw , 5rem )) {
+@supports not (padding: clamp( 0.0000000625rem , 0.0000000625rem  +  0vw , 0.0000000625rem )) {
     .popup__content--download {
-      padding: calc(1.25rem + 3.75 * (100vw - 20rem) / 55);
+      padding: calc(0.0000000625rem + 0 * (100vw - 20rem) / 55);
     }
 }
 
@@ -8042,6 +8057,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (gap: clamp( 0.625rem , 0.2840909091rem  +  1.7045454545vw , 1.5625rem )) {
     .popup__body {
       gap: calc(0.625rem + 0.9375 * (100vw - 20rem) / 55);
+    }
+}
+
+@supports (padding: clamp( 1.25rem , -0.1136363636rem  +  6.8181818182vw , 5rem )) {
+    .popup__body--download {
+      padding: clamp( 1.25rem , -0.1136363636rem  +  6.8181818182vw , 5rem );
+    }
+}
+
+@supports not (padding: clamp( 1.25rem , -0.1136363636rem  +  6.8181818182vw , 5rem )) {
+    .popup__body--download {
+      padding: calc(1.25rem + 3.75 * (100vw - 20rem) / 55);
     }
 }
 
@@ -8405,15 +8432,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
-@supports (font-size: clamp( 0.75rem , 0.7045454545rem  +  0.2272727273vw , 0.875rem )) {
+@supports (font-size: clamp( 0.625rem , 0.5340909091rem  +  0.4545454545vw , 0.875rem )) {
     .slide-calculator__title span {
-      font-size: clamp( 0.75rem , 0.7045454545rem  +  0.2272727273vw , 0.875rem );
+      font-size: clamp( 0.625rem , 0.5340909091rem  +  0.4545454545vw , 0.875rem );
     }
 }
 
-@supports not (font-size: clamp( 0.75rem , 0.7045454545rem  +  0.2272727273vw , 0.875rem )) {
+@supports not (font-size: clamp( 0.625rem , 0.5340909091rem  +  0.4545454545vw , 0.875rem )) {
     .slide-calculator__title span {
-      font-size: calc(0.75rem + 0.125 * (100vw - 20rem) / 55);
+      font-size: calc(0.625rem + 0.25 * (100vw - 20rem) / 55);
     }
 }
 
