@@ -2382,7 +2382,6 @@ body::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #ffffff;
 }
 
 .header__logo-body {
@@ -2953,17 +2952,6 @@ body::after {
 
 .hero {
   position: relative;
-  color: #000000;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.2823529412);
 }
 
 .hero__img-bg {
@@ -2975,7 +2963,7 @@ body::after {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .hero__container {
@@ -7648,6 +7636,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-color: rgba(255, 255, 255, 0);
   }
 
   .catalog-menu {
