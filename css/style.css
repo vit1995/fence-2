@@ -2382,6 +2382,11 @@ body::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  color: #000000;
+  background-color: white;
+  padding: 0.625rem 0rem;
+  padding: 0.9375rem;
+  border-radius: 0.9375rem;
 }
 
 .header__logo-body {
@@ -2952,6 +2957,8 @@ body::after {
 
 .hero {
   position: relative;
+  color: #000000;
+  text-shadow: 1px 1px rgba(161, 161, 161, 0.3960784314);
 }
 
 .hero__img-bg {
@@ -2963,7 +2970,7 @@ body::after {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .hero__container {
@@ -2977,7 +2984,7 @@ body::after {
 }
 
 .hero__title {
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1.4;
   max-width: 43.75rem;
@@ -2996,6 +3003,7 @@ body::after {
   line-height: 1.4;
   letter-spacing: 0.04em;
   font-weight: 600;
+  font-weight: 800;
 }
 
 .hero__items {
@@ -3023,7 +3031,7 @@ body::after {
   line-height: 1.4;
   letter-spacing: 0.04em;
   font-weight: 700;
-  color: rgb(0, 0, 0);
+  font-weight: 800;
 }
 
 .hero__image {
